@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Meitu登录</title>
+        <link rel="stylesheet" href="../css/login.css">
+        <script src="../js/login.js"></script>
+        <script src="../js/jquery-1.10.1.min.js"></script>
+        <script src="../js/jquery.cookie.js"></script>
+        <style type="text/css">
+            *{margin: 0;padding: 0}
+        </style>
+	</head>
+	<body>
+    <div id="login_header"><img src="../images/login.jpg"></div>
+    <div id="login_body">
+        <div class="login_form">
+            <form method="post" action="../php/login.php">
+                <div><p>美图账号登录</p></div>
+                <input name="userName" class="login_text" type="text" placeholder="邮箱/手机/用户名" required="required">
+                <br>
+                <input name="password" class="login_pass" type="password" placeholder="密码" required="required">
+                两周内自动登录<a href="#">忘记密码？</a>
+                <input class="login_submit" type="submit" value="登陆">
+            </form>
+        </div>
+    </div>
+	</body>
+</html>
